@@ -155,6 +155,8 @@ body {
 		bottom: 0;
 	}
 
+
+
 	/* превращ. меню в крестик */
 	.header__burger.active::before {
 		transform: rotate(45deg);
@@ -188,6 +190,7 @@ body {
 
 	.header__list {
 		display: block;
+		z-index: 1;
 	}
 
 	.header__list li {
@@ -201,4 +204,19 @@ body {
 	.content {
 		padding: 70px 0 0 0;
 	}
+}
+
+/* правила только для Internet Explorer 10 и 11 */
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+	.header__burger {
+		display: block;
+		position: absolute;
+		width: 30px;
+		height: 20px;
+		z-index: 3;
+		right: 0;
+		top: 30%;
+	}
+
 }
