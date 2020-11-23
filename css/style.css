@@ -204,11 +204,9 @@ body {
 	.content {
 		padding: 70px 0 0 0;
 	}
-}
 
-/* правила только для Internet Explorer 10 и 11 */
-@media all and (-ms-high-contrast: none),
-(-ms-high-contrast: active) {
+	/* правила для Internet Explorer 10 и 11/Edge */
+	_:-ms-lang(x),
 	.header__burger {
 		display: block;
 		position: absolute;
@@ -218,5 +216,4 @@ body {
 		right: 0;
 		top: 30%;
 	}
-
 }
